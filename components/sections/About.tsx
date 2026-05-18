@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Briefcase, FolderGit2, GraduationCap, Globe } from "lucide-react";
 import Image from "next/image";
+import { useInView } from "@/hooks/useInView";
 
 function fadeUp(i: number) {
   return {
@@ -23,8 +24,19 @@ const STATS = [
 export default function About() {
   const t = useTranslations("about");
 
+  const { ref, inView } = useInView();
+
+  function fadeUp(i: number) {
+    return {
+      initial: { opacity: 0, y: 24 },
+      animate: inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 },
+      transition: { duration: 0.6, delay: i * 0.15, ease: [0.25, 0.1, 0.25, 1] as const },
+    };
+  }
+
   return (
     <section
+      ref={ref}
       id="about"
       className="relative w-full px-6 py-24 sm:py-32 flex justify-center"
     >
