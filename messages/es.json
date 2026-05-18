@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "hero": {
+    "available": "Disponible para trabajar",
+    "description": "Transformando ideas en aplicaciones fluidas y modernas.",
+    "cta_projects": "Ver proyectos",
+    "cta_cv": "Descargar CV"
+  }
+}

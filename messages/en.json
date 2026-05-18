@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "github": "GitHub",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "hero": {
+    "available": "Available for work",
+    "description": "Turning ideas into fluid and modern applications.",
+    "cta_projects": "View projects",
+    "cta_cv": "Download CV"
+  }
+}
