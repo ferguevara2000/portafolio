@@ -5,14 +5,7 @@ import { useTranslations } from "next-intl";
 import { Briefcase, FolderGit2, GraduationCap, Globe } from "lucide-react";
 import Image from "next/image";
 import { useInView } from "@/hooks/useInView";
-
-function fadeUp(i: number) {
-  return {
-    initial: { opacity: 0, y: 24 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6, delay: i * 0.12, ease: [0.25, 0.1, 0.25, 1] as const },
-  };
-}
+import { useEffect, useState } from "react";
 
 const STATS = [
   { icon: Briefcase, labelKey: "experience", value: "2" },
@@ -25,6 +18,10 @@ export default function About() {
   const t = useTranslations("about");
 
   const { ref, inView } = useInView();
+  const [isMobile] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(hover: none)").matches;
+  });
 
   function fadeUp(i: number) {
     return {
@@ -54,12 +51,13 @@ export default function About() {
           {/* Foto */}
            <div
             className="relative w-full h-full rounded-2xl overflow-hidden bg-white/5 border border-white/10"
-            style={{ position: "relative" }}
             onMouseEnter={(e) => {
+              if (isMobile) return;
               const img = e.currentTarget.querySelector("img");
               if (img) img.style.filter = "grayscale(0%)";
             }}
             onMouseLeave={(e) => {
+              if (isMobile) return;
               const img = e.currentTarget.querySelector("img");
               if (img) img.style.filter = "grayscale(100%)";
             }}
@@ -68,7 +66,8 @@ export default function About() {
               src="/foto.png"
               alt="Fernando Guevara"
               fill
-              className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+              className="object-cover transition-all duration-700"
+              style={{ filter: isMobile ? "grayscale(0%)" : "grayscale(100%)" }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
