@@ -5,6 +5,7 @@ import { Home, FolderKanban, NotebookPen, Mail, Menu, X } from "lucide-react";
 import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { useState, useRef, useEffect } from "react";
 import { useTranslations } from "next-intl";
+import { smoothScrollTo } from "@/lib/smoothScrool";
 
 type NavItem = {
   icon: React.ElementType;
@@ -39,6 +40,12 @@ function NavIcon({
   mouseX: ReturnType<typeof useMotionValue<number>>;
   navHovered: boolean;
 }) {
+  const handleClick = (e: React.MouseEvent) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      smoothScrollTo(href.slice(1));
+    }
+  };
   const [hovered, setHovered] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -92,6 +99,7 @@ function NavIcon({
 
       <motion.a
         href={href}
+        onClick={handleClick}
         target={href.startsWith("http") ? "_blank" : undefined}
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
         style={{ scale: springScale, y: springY }}
@@ -174,7 +182,13 @@ function MobileNav({ t }: { t: (key: string) => string }) {
               <a
                 key={item.key}
                 href={item.href}
-                onClick={() => setOpen(false)}
+                onClick={(e) => {
+                  if (item.href.startsWith("#")) {
+                    e.preventDefault();
+                    smoothScrollTo(item.href.slice(1));
+                  }
+                  setOpen(false);
+                }}
                 className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-white/50 hover:text-white hover:bg-white/5 transition-all duration-200"
               >
                 <item.icon size={16} />

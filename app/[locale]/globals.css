@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
 html,
 body {
   min-height: 100vh;
@@ -22,10 +27,12 @@ body::before {
   z-index: 0;
   pointer-events: none;
   background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background-size: 24px 24px;
 }
 
 main {
   position: relative;
   z-index: 1;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }

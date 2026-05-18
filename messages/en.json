@@ -13,5 +13,15 @@
     "description": "Turning ideas into fluid and modern applications.",
     "cta_projects": "View projects",
     "cta_cv": "Download CV"
+  },
+  "about": {
+    "label": "About me",
+    "bio": "I'm a Full Stack developer passionate about building modern, fluid and functional web and mobile applications. I focus on turning ideas into scalable digital solutions with intuitive user experiences. Always in constant learning and growth within the world of software development.",
+    "experience": "Years of experience",
+    "years": "yrs",
+    "projects": "Completed projects",
+    "modality": "Modality",
+    "modalityValue": "Remote & On-site",
+    "education": "Education"
   }
 }

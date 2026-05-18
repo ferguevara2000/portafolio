@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { ArrowRight, FileText, Download } from "lucide-react";
+import { smoothScrollTo } from "@/lib/smoothScrool";
 
 const ROLES = ["Fullstack Developer"];
 
@@ -58,8 +59,11 @@ function fadeUp(i: number) {
 function ScrollButton() {
   const [hovered, setHovered] = useState(false);
 
+  const handleClick = () => smoothScrollTo("about");
+
   return (
     <motion.div
+      onClick={handleClick}
       animate={hovered ? { y: 0 } : { y: [0, 8, 0] }}
       transition={
         hovered
@@ -164,6 +168,7 @@ export default function Hero() {
         {/* Badge disponibilidad */}
         <motion.div
           {...fadeUp(0)}
+          style={{ minHeight: "32px", minWidth: "180px" }}
           className="flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-2.5 backdrop-blur-sm"
         >
           <span className="relative flex h-2 w-2">
