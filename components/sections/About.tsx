@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Briefcase, FolderGit2, GraduationCap, Globe } from "lucide-react";
 import Image from "next/image";
 import { useInView } from "@/hooks/useInView";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const STATS = [
   { icon: Briefcase, labelKey: "experience", value: "2" },
@@ -25,7 +25,7 @@ export default function About() {
 
   function fadeUp(i: number) {
     return {
-      initial: { opacity: 0, y: 24 },
+      initial: { opacity: 0, y: 24, willChange: "transform, opacity" },
       animate: inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 },
       transition: { duration: 0.6, delay: i * 0.15, ease: [0.25, 0.1, 0.25, 1] as const },
     };

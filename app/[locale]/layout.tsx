@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import Navbar from "@/components/layout/Navbar";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import Logo from "@/components/layout/Logo";
+import SmoothScroll from "@/components/layout/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Mi portafolio",
@@ -25,11 +26,13 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Logo />
-          <LanguageSwitcher />
-          {children}
-          <Navbar />
-        </NextIntlClientProvider>
+          <SmoothScroll>
+            <Logo />
+            <LanguageSwitcher />
+            {children}
+            <Navbar />
+            </SmoothScroll>
+          </NextIntlClientProvider>
       </body>
     </html>
   );

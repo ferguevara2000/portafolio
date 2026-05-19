@@ -17,5 +17,5 @@ export function smoothScrollTo(id: string, duration = 800) {
     if (progress < 1) requestAnimationFrame(step);
   };
 
-  requestAnimationFrame(step);
+  requestAnimationFrame(step)
 }
