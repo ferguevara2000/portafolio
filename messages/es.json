@@ -27,5 +27,10 @@
   "skills": {
   "label": "Stack tecnológico",
   "title": "Tecnologías que uso"
+},
+"projects": {
+  "label": "Proyectos",
+  "title": "Lo que he construido",
+  "all": "Todos"
 }
 }

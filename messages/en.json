@@ -27,5 +27,10 @@
   "skills": {
   "label": "Tech stack",
   "title": "Technologies I use"
+},
+"projects": {
+  "label": "Projects",
+  "title": "What I've built",
+  "all": "All"
 }
 }
