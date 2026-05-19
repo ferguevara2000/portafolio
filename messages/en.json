@@ -23,5 +23,9 @@
     "modality": "Modality",
     "modalityValue": "Remote & On-site",
     "education": "Education"
-  }
+  },
+  "skills": {
+  "label": "Tech stack",
+  "title": "Technologies I use"
+}
 }

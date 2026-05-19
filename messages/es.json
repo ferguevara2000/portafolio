@@ -23,5 +23,9 @@
     "modality": "Modalidad",
     "modalityValue": "Remoto & Presencial",
     "education": "Formación"
-  }
+  },
+  "skills": {
+  "label": "Stack tecnológico",
+  "title": "Tecnologías que uso"
+}
 }

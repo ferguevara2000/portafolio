@@ -35,6 +35,7 @@ export default function About() {
     <section
       ref={ref}
       id="about"
+      style={{ paddingTop: "3rem" }}
       className="relative w-full px-6 py-24 sm:py-32 flex justify-center"
     >
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24 items-center">
