@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import Logo from "@/components/layout/Logo";
 import SmoothScroll from "@/components/layout/SmoothScroll";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Mi portafolio",
@@ -30,6 +31,7 @@ export default async function RootLayout({
             <Logo />
             <LanguageSwitcher />
             {children}
+            <Footer />
             <Navbar />
             </SmoothScroll>
           </NextIntlClientProvider>

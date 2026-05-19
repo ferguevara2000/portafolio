@@ -32,5 +32,10 @@
   "label": "Proyectos",
   "title": "Lo que he construido",
   "all": "Todos"
+},
+"contact": {
+  "label": "Contacto",
+  "title": "Hablemos",
+  "subtitle": "¿Tienes un proyecto en mente o quieres trabajar juntos? Escríbeme por cualquiera de estos medios."
 }
 }

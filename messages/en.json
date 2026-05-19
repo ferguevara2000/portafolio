@@ -32,5 +32,10 @@
   "label": "Projects",
   "title": "What I've built",
   "all": "All"
+},
+"contact": {
+  "label": "Contact",
+  "title": "Let's talk",
+  "subtitle": "Have a project in mind or want to work together? Reach out through any of these channels."
 }
 }
