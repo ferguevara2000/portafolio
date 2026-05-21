@@ -1,10 +1,14 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 
 export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
+    if (!containerRef.current) return;
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -21,5 +25,5 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     return () => lenis.destroy();
   }, []);
 
-  return <>{children}</>;
+  return <div ref={containerRef}>{children}</div>;
 }

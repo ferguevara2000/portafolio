@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { routing } from "@/routing";
 import { motion } from "framer-motion";
+import { ES, US } from "country-flag-icons/react/3x2";
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -20,24 +21,26 @@ export default function LanguageSwitcher() {
     return segments.join("/") || "/";
   };
 
+  const LANGS = [
+    { code: "es", Flag: ES },
+    { code: "en", Flag: US },
+  ];
+
   return (
-    <div className="fixed top-6 right-6 z-50 flex items-center gap-3">
-      {["es", "en"].map((lang, i) => (
-        <div key={lang} className="flex items-center gap-3">
+    <div className="flex items-center gap-3" style={{ position: "absolute", top: "1.5rem", right: "1.5rem", zIndex: 9999 }}>
+      {LANGS.map(({ code, Flag }, i) => (
+        <div key={code} className="flex items-center gap-3">
           {i !== 0 && (
             <span className="text-white/15 text-xs select-none">|</span>
           )}
-          <Link href={getLocalePath(lang)} scroll={false}>
-            <motion.span
-              whileHover={{ opacity: 1 }}
-              className="text-xs font-mono tracking-widest cursor-pointer transition-all duration-300"
-              style={{
-                color: locale === lang ? "#ffffff" : "rgba(255,255,255,0.2)",
-                fontWeight: locale === lang ? 500 : 400,
-              }}
+          <Link href={getLocalePath(code)} scroll={false}>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="cursor-pointer transition-all duration-300"
+              style={{ opacity: locale === code ? 1 : 0.3 }}
             >
-              {lang.toUpperCase()}
-            </motion.span>
+              <Flag className="w-6 h-4 rounded-sm" />
+            </motion.div>
           </Link>
         </div>
       ))}

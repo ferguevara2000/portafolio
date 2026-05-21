@@ -3,13 +3,12 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Navbar from "@/components/layout/Navbar";
-import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
-import Logo from "@/components/layout/Logo";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import Footer from "@/components/layout/Footer";
+import FixedUI from "@/components/layout/FixedUI";
 
 export const metadata: Metadata = {
-  title: "Mi portafolio",
+  title: "Fernando Guevara Portfolio",
   description: "Fullstack Developer",
 };
 
@@ -27,9 +26,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <FixedUI />
           <SmoothScroll>
-            <Logo />
-            <LanguageSwitcher />
             {children}
             <Footer />
             <Navbar />
