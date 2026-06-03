@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portafolio Personal
 
-## Getting Started
+Bienvenido a mi portafolio profesional. Este proyecto reúne información sobre mi experiencia, habilidades técnicas, proyectos destacados y formas de contacto.
 
-First, run the development server:
+## 📋 Descripción
+
+Este portafolio fue desarrollado con el objetivo de presentar mi perfil como desarrollador de software, mostrando los proyectos en los que he trabajado, tecnologías que utilizo y mi trayectoria profesional.
+
+## ✨ Características
+
+* Diseño moderno y responsivo.
+* Presentación de proyectos destacados.
+* Información profesional y académica.
+* Sección de habilidades técnicas.
+* Formulario de contacto.
+* Optimizado para dispositivos móviles y escritorio.
+
+## 🛠️ Tecnologías Utilizadas
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* HTML5
+* CSS3
+
+## 📂 Estructura del Proyecto
+
+```bash
+src/
+├── app/
+├── components/
+├── data/
+├── hooks/
+├── lib/
+├── styles/
+└── public/
+```
+
+## 🚀 Instalación
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/ferguevara2000/portafolio.git
+```
+
+Ingresa al directorio del proyecto:
+
+```bash
+cd tu-portafolio
+```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Ejecuta el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre tu navegador en:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📸 Vista Previa
 
-## Learn More
+Puedes visitar la versión en producción aquí:
 
-To learn more about Next.js, take a look at the following resources:
+[Demo del Proyecto](https://fernandoguevara.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👨‍💻 Autor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Fernando Vinicio Guevara Bayas**
 
-## Deploy on Vercel
+Ingeniero en Software apasionado por el desarrollo web, la automatización de procesos y la creación de soluciones tecnológicas que aporten valor a las organizaciones.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Contacto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* LinkedIn: https://linkedin.com/in/fernando-guevara-bayas-788981184
+* GitHub: https://github.com/ferguevara2000
+* Correo: [fguevara4731@hotmail.com](mailto:fguevara4731@hotmail.com)
+
+## 📄 Licencia
+
+Este proyecto está disponible bajo la licencia MIT.
