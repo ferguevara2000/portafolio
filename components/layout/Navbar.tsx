@@ -21,7 +21,7 @@ const NAV_ITEMS: NavItem[] = [
 
 const SOCIAL_ITEMS: NavItem[] = [
   { icon: FaGithub, key: "github", href: "https://github.com/ferguevara2000" },
-  { icon: FaWhatsapp, key: "whatsapp", href: "https://wa.me/+59398823045" },
+  { icon: FaWhatsapp, key: "whatsapp", href: "https://wa.me/+593988230845" },
   { icon: FaLinkedin, key: "linkedin", href: "https://linkedin.com/in/fernando-guevara-bayas-788981184" },
   { icon: Mail, key: "email", href: "mailto:fguevara4731@hotmail.com" },
 ];
