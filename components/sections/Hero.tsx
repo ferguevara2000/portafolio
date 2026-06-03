@@ -99,9 +99,16 @@ function ScrollButton() {
 
 function ProjectsButton({ label }: { label: string }) {
   const [hovered, setHovered] = useState(false);
+
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    smoothScrollTo("proyectos");
+  };
+
   return (
     <motion.a
       href="#proyectos"
+      onClick={handleClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       animate={{ scale: hovered ? 1.06 : 1 }}
