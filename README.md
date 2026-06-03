@@ -1,21 +1,21 @@
-# 🚀 Portafolio Personal
+# 🚀 Personal Portfolio
 
-Bienvenido a mi portafolio profesional. Este proyecto reúne información sobre mi experiencia, habilidades técnicas, proyectos destacados y formas de contacto.
+Welcome to my professional portfolio. This project showcases my experience, technical skills, featured projects, and contact information.
 
-## 📋 Descripción
+## 📋 About the Project
 
-Este portafolio fue desarrollado con el objetivo de presentar mi perfil como desarrollador de software, mostrando los proyectos en los que he trabajado, tecnologías que utilizo y mi trayectoria profesional.
+This portfolio was developed to present my profile as a Software Engineer, highlighting the projects I have worked on, the technologies I use, and my professional background.
 
-## ✨ Características
+## ✨ Features
 
-* Diseño moderno y responsivo.
-* Presentación de proyectos destacados.
-* Información profesional y académica.
-* Sección de habilidades técnicas.
-* Formulario de contacto.
-* Optimizado para dispositivos móviles y escritorio.
+* Modern and responsive design.
+* Featured projects showcase.
+* Professional and academic background.
+* Technical skills section.
+* Contact form.
+* Optimized for desktop and mobile devices.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 * Next.js
 * React
@@ -24,7 +24,7 @@ Este portafolio fue desarrollado con el objetivo de presentar mi perfil como des
 * HTML5
 * CSS3
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 
 ```bash
 src/
@@ -37,56 +37,56 @@ src/
 └── public/
 ```
 
-## 🚀 Instalación
+## 🚀 Getting Started
 
-Clona el repositorio:
+Clone the repository:
 
 ```bash
 git clone https://github.com/ferguevara2000/portafolio.git
 ```
 
-Ingresa al directorio del proyecto:
+Navigate to the project directory:
 
 ```bash
-cd tu-portafolio
+cd portafolio
 ```
 
-Instala las dependencias:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-Ejecuta el servidor de desarrollo:
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Abre tu navegador en:
+Open your browser and visit:
 
 ```bash
 http://localhost:3000
 ```
 
-## 📸 Vista Previa
+## 🌐 Live Demo
 
-Puedes visitar la versión en producción aquí:
+Check out the live version here:
 
-[Demo del Proyecto](https://fernandoguevara.vercel.app/)
+https://fernandoguevara.vercel.app/
 
-## 👨‍💻 Autor
+## 👨‍💻 About Me
 
 **Fernando Vinicio Guevara Bayas**
 
-Ingeniero en Software apasionado por el desarrollo web, la automatización de procesos y la creación de soluciones tecnológicas que aporten valor a las organizaciones.
+Software Engineer with experience in web development, technical support, and enterprise software maintenance. Passionate about building efficient, scalable, and user-focused solutions using modern technologies.
 
-### Contacto
+## 📫 Contact
 
 * LinkedIn: https://linkedin.com/in/fernando-guevara-bayas-788981184
 * GitHub: https://github.com/ferguevara2000
-* Correo: [fguevara4731@hotmail.com](mailto:fguevara4731@hotmail.com)
+* Email: [fguevara4731@hotmail.com](mailto:fguevara4731@hotmail.com)
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está disponible bajo la licencia MIT.
+This project is licensed under the MIT License.
